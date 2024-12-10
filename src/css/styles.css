@@ -12,6 +12,18 @@
 @import url(../css/utils/variables.css);
 @import url(../css/utils/common.css);
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /* base */
 
 body {
@@ -317,6 +329,8 @@ body {
   margin: 20px auto 0 auto;
   border-radius: 5px;
   background: #b00000;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 /* if-buy */
@@ -665,6 +679,8 @@ body {
   padding: 20px;
   border-radius: 5px;
   background: #b00000;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 /* best-time */
@@ -987,6 +1003,8 @@ body {
   padding: 10px;
   border-radius: 30px;
   background: #b00000;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 /* swiper */
