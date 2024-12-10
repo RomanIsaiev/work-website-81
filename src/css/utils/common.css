@@ -44,26 +44,3 @@ body::-webkit-scrollbar-track {
   clip-path: inset(50%);
   margin: -1px;
 }
-
-.section {
-  padding: 60px 0;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 16px;
-
-  @media (360px <= width) {
-    max-width: 360px;
-  }
-
-  @media (768px<=width) {
-    max-width: 768px;
-  }
-
-  @media (1280px<=width) {
-    max-width: 1280px;
-    padding: 0 24px;
-  }
-}

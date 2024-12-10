@@ -11,3 +11,1257 @@
 
 @import url(../css/utils/variables.css);
 @import url(../css/utils/common.css);
+
+/* base */
+
+body {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+  max-width: 360px;
+}
+
+/* header */
+
+.header {
+  position: absolute;
+  left: 50%;
+  top: 12px;
+
+  width: 100%;
+  transform: translate(-50%);
+}
+
+.header .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.decor-left {
+  width: 40px;
+  height: 40px;
+
+  border-top: 1px solid #ffffff6e;
+  border-left: 1px solid #ffffff6e;
+}
+
+.header .text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 14.3px */
+
+  width: 100%;
+  max-width: 236px;
+}
+
+.decor-right {
+  width: 40px;
+  height: 40px;
+
+  border-top: 1px solid #ffffff6e;
+  border-right: 1px solid #ffffff6e;
+}
+
+/* hero */
+
+.hero {
+  padding-top: 450px;
+  padding-bottom: 60px;
+  background-image: url(../img/hero/bg-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero/bg-2x.jpg);
+  }
+}
+
+.hero .short-info {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 120%; /* 18px */
+  text-transform: uppercase;
+}
+
+.hero .title {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 73px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 87.6px */
+  letter-spacing: 5.84px;
+  text-transform: uppercase;
+}
+
+.hero .subtitle {
+  margin-top: -14px;
+
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 100%; /* 36px */
+  text-transform: lowercase;
+}
+
+/* bonuses */
+
+.bonuses {
+  padding-bottom: 60px;
+  background: #060606;
+}
+
+.bonuses .container {
+  padding: 0;
+}
+
+.bonuses .about-hairstyles-container {
+  margin-bottom: 80px;
+}
+
+.bonuses .hairstyles-title {
+  color: #f92c2c;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.14px;
+
+  margin-bottom: 12px;
+}
+
+.bonuses .hairstyles-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bonuses .list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 14px;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 14.95px */
+
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+
+  max-width: 156px;
+  width: 100%;
+  height: 48px;
+}
+
+.bonuses .bonuses-container {
+  margin-bottom: 16px;
+}
+
+.bonuses .bonuses-title {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 16.5px */
+
+  max-width: 268px;
+  margin: 0 auto 18px auto;
+}
+
+.bonuses .bonuses-title span {
+  color: #f92c2c;
+}
+
+.bonuses .bonuses-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bonuses .bonuses-item {
+}
+
+.bonuses .bonuses-item:nth-child(even) {
+  margin-left: -40px;
+}
+
+.bonuses .bonus-image {
+}
+
+.timer-text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 15.4px */
+
+  margin-bottom: 4px;
+}
+
+/* timer */
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
+}
+
+.countdown-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-time {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 30.8px */
+  letter-spacing: -0.56px;
+  width: 50px;
+}
+
+.countdown-doubledot {
+  content: ':';
+  display: flex;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 30.8px */
+  letter-spacing: -0.56px;
+  margin: 0 auto;
+}
+
+.countdown-label {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 30.8px */
+  letter-spacing: -0.56px;
+}
+
+.bonus-btn {
+  display: block;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 18px */
+  text-transform: uppercase;
+
+  padding: 20px;
+
+  max-width: 260px;
+  margin: 20px auto 0 auto;
+  border-radius: 5px;
+  background: #b00000;
+}
+
+/* if-buy */
+
+.if-buy {
+  background: #060606;
+  padding-bottom: 60px;
+}
+
+.if-buy .container {
+}
+
+.if-buy .title-container {
+  position: relative;
+
+  padding: 18px;
+
+  margin-bottom: 30px;
+}
+
+.if-buy .decor-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.if-buy .title {
+  color: #f92c2c;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+  text-transform: uppercase;
+}
+
+.if-buy .desc {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+
+  max-width: 284px;
+  margin: 0 auto;
+}
+
+.if-buy .decor-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  transform: rotate(90deg);
+}
+
+.if-buy .list-wrapper {
+  padding: 36px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.if-buy .wrapper-title {
+  color: #090909;
+  font-family: Oranienbaum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.if-buy .wrapper-title span {
+  color: #f92c2c;
+}
+
+.if-buy .wrapper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.if-buy .list-item {
+  border-bottom: 1px solid #e8e8e8;
+
+  padding-bottom: 32px;
+}
+
+.if-buy .list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.if-buy .item-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.if-buy .item-text {
+  color: #060606;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 16.5px */
+
+  max-width: 245px;
+}
+
+/* program */
+
+.program {
+  padding: 60px 0;
+  background: #060606;
+}
+
+.program .container {
+}
+
+.program .title {
+  color: #f92c2c;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+}
+
+.program .subtitle {
+  color: #fff;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+}
+
+.program .tariff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.program .tariff-item {
+  padding: 32px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.program .item-title {
+  color: #b00000;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+
+  max-width: 260px;
+
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.program .program-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-width: 260px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.program .program-item {
+  color: #060606;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%; /* 15.75px */
+  letter-spacing: -0.3px;
+}
+
+.program .bonus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-width: 260px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.program .bonus-item {
+  color: #060606;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%; /* 15.75px */
+  letter-spacing: -0.3px;
+}
+
+.program .tariff-item:nth-child(1) .bonus-item {
+  color: rgba(6, 6, 6, 0.3);
+  text-decoration: line-through;
+}
+
+.program .program-access {
+  color: #060606;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105%; /* 15.75px */
+  letter-spacing: -0.3px;
+
+  margin-bottom: 20px;
+}
+
+.program .price {
+  color: #090909;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 28.8px */
+  letter-spacing: -0.96px;
+  text-transform: lowercase;
+
+  margin-bottom: 16px;
+}
+
+.program .price span {
+  font-weight: 250;
+  text-decoration: line-through;
+}
+
+.buy-btn-tariff {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+
+  border: none;
+
+  max-width: 280px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background: #b00000;
+}
+
+/* best-time */
+
+.best-time {
+  background: #060606;
+  padding-bottom: 60px;
+
+  overflow: hidden;
+}
+
+.best-time .title {
+  color: #f92c2c;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 43.2px */
+  text-transform: uppercase;
+}
+
+.best-time .subtitle {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+
+  margin-bottom: 40px;
+}
+
+/* marquee */
+
+.marquee-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  max-width: 600px;
+  margin-left: -40px;
+
+  width: 500px;
+}
+
+.marquee-container .marquee-text {
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 15.4px */
+  text-transform: uppercase;
+}
+
+.marquee-container.red-marq .marquee-text {
+  color: #fff;
+}
+
+.marquee-container.white-marq {
+  margin-top: -40px;
+
+  background: #fff;
+
+  transform: rotate(5deg);
+}
+
+.marquee-container.red-marq {
+  position: relative;
+  z-index: 2;
+
+  background: #8e1618;
+
+  transform: rotate(-8deg);
+}
+
+.marquee-container.white-marq .marquee-text {
+  color: #060606;
+}
+
+/* about-author */
+
+.about-author {
+  padding-top: 60px;
+  background: #060606;
+}
+
+.about-author .container {
+}
+
+.about-author .title {
+  color: #fff;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+}
+
+.about-author .image-container {
+  position: relative;
+}
+
+.about-author .author-image {
+}
+
+.about-author .smooth-image {
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+
+  width: 100%;
+  height: 40px;
+
+  background-color: #060606;
+  filter: blur(10px);
+}
+
+.about-author .author-name {
+  position: relative;
+
+  margin-top: -10px;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 30.8px */
+
+  margin-bottom: 20px;
+}
+
+.about-author .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+
+  margin-bottom: 60px;
+}
+
+.about-author .list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 14.95px */
+
+  padding: 8px;
+  max-width: 156px;
+  width: 100%;
+  height: 94px;
+
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.students-count-wrapper {
+  position: relative;
+  padding: 20px 0;
+}
+
+.students-count-wrapper .decor-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.students-count-wrapper .text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 115%; /* 18.4px */
+
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.students-count-wrapper .decor-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  transform: rotate(90deg);
+}
+
+/* buy-section */
+
+.buy-section {
+  padding: 60px 0;
+  background: #060606;
+}
+
+.buy-section .container {
+}
+
+.buy-section .title {
+  color: #fff;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+  text-transform: uppercase;
+}
+
+.buy-section .title span {
+  color: #f92c2c;
+}
+
+.buy-section .desc {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 17.6px */
+
+  margin-bottom: 40px;
+}
+
+.buy-section .list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.buy-section .list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 32px;
+}
+
+.buy-section .item-box {
+  display: flex;
+  gap: 12px;
+}
+
+.buy-section .item-image {
+}
+
+.buy-section .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 180px;
+  width: 100%;
+  height: 145px;
+}
+
+.buy-section .item-text {
+  color: #fff;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 16.5px */
+}
+
+.buy-section .item-price {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+
+  width: 100%;
+
+  padding: 4px;
+  border-radius: 90px;
+  background: rgba(255, 255, 255, 0.07);
+
+  margin-bottom: 4px;
+}
+
+.buy-section .buy-btn {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.42px;
+  text-transform: uppercase;
+
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  background: #b00000;
+}
+
+/* swiper */
+
+.only-bonuses {
+  padding: 60px 0;
+  background: #060606;
+}
+
+.only-bonuses .container {
+  padding: 0;
+  max-width: 430px;
+}
+
+.only-bonuses .title-container {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.move-container {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.move-text {
+  color: #f92c2c;
+  font-family: 'Corsa Grotesk';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 12px */
+
+  max-width: 104px;
+}
+
+.only-bonuses .title {
+  color: #fff;
+  font-family: Oranienbaum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+
+  max-width: 320px;
+  margin: 0 auto 28px auto;
+}
+
+/* swiper */
+
+.swiper {
+  cursor: pointer;
+}
+
+.mySwiper1 {
+  max-width: 430px;
+
+  margin-bottom: 40px;
+}
+
+.swiper-wrapper {
+  margin-left: -80px;
+  margin-bottom: 40px;
+}
+
+.swiper-pagination {
+  --swiper-pagination-color: #b00000;
+  --swiper-pagination-bullet-inactive-color: #b0000086;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+/*  */
+
+.bonus-price {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 44px */
+
+  margin-bottom: 16px;
+}
+
+.only-bonuses .buy-all-bns {
+  display: block;
+  padding: 20px;
+  border-radius: 5px;
+  background: #b00000;
+
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 15px */
+  letter-spacing: -0.45px;
+  text-transform: uppercase;
+  margin: 0 auto 8px auto;
+}
+
+.only-bonuses .all-bns-access {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 110%; /* 17.6px */
+}
+
+/* reviews */
+
+.reviews {
+  padding: 60px 0;
+  background: #060606;
+}
+
+.reviews .container {
+  padding: 0;
+  max-width: 430px;
+}
+
+.reviews .title-container {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.move-container {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.move-text {
+  color: #f92c2c;
+  font-family: 'Corsa Grotesk';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 12px */
+
+  max-width: 104px;
+}
+
+.reviews .title {
+  color: #fff;
+  font-family: Oranienbaum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+  text-transform: uppercase;
+
+  max-width: 320px;
+  margin: 0 auto 28px auto;
+}
+
+/* swiper */
+
+.swiper {
+  cursor: pointer;
+}
+
+.mySwiper2 {
+  max-width: 430px;
+  margin-bottom: 40px;
+}
+
+.mySwiper2 .swiper-wrapper {
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.mySwiper2 .swiper-pagination {
+  --swiper-pagination-color: #b00000;
+  --swiper-pagination-bullet-inactive-color: #b0000086;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+/* footer */
+
+.footer {
+  background: #090909;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.fop-box {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 115%; /* 16.1px */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+.fop-box .name {
+  margin-bottom: 4px;
+}
+
+.mail-link {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.mail-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.mail-box .mail {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 16.1px */
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+}
+
+.deals-box {
+  color: #fff;
+  text-align: center;
+  font-family: 'Corsa Grotesk';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 115%; /* 16.1px */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+
+  margin-bottom: 60px;
+}
+
+.deals-link {
+  display: block;
+}
+
+.deals-box .public {
+  margin-bottom: 4px;
+}
+
+.dising-creator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: #fff;
+  font-family: 'Corsa Grotesk';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 14.95px */
+  letter-spacing: -0.13px;
+  text-transform: uppercase;
+
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.dising-creator span {
+  color: #f92c2c;
+  font-family: 'Corsa Grotesk';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: -0.13px;
+  text-transform: uppercase;
+}
+
+/* MODAL */
+
+.modal {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  opacity: 1;
+  visibility: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 999;
+}
+
+.modal-overlay {
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  padding-top: 80px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+
+  width: 375px;
+  max-height: 700px;
+
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: auto;
+}
+
+.modal-name {
+  color: #090909;
+  text-align: center;
+  font-family: Oranienbaum;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 48px */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}

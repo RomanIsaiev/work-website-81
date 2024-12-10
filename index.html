@@ -3,18 +3,1181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Premium Hairstyles</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="decor-left"></div>
+        <p class="text">
+          Перший онлайн-курс зачісок у форматі групового наставництва
+        </p>
+        <div class="decor-right"></div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <p class="short-info">Базовий фундаментальний курс</p>
+          <h1 class="title">Premium</h1>
+          <h2 class="subtitle">Hairstyles</h2>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container">
+          <div class="about-hairstyles-container">
+            <h3 class="hairstyles-title">
+              Перетвори свої зачіски на магніт для клієнтів
+            </h3>
+            <ul class="hairstyles-list">
+              <li class="list-item">ексклюзивні конкурсні техніки</li>
+              <li class="list-item">якісні та чіткі покрокові дії</li>
+              <li class="list-item">безлім підтримка та супровід</li>
+              <li class="list-item">повний переворот твоїх здібностей</li>
+            </ul>
+          </div>
+          <div class="bonuses-container">
+            <h3 class="bonuses-title">
+              Встигни оплатити до закінчення таймеру та
+              <span>отримай бонус</span>
+            </h3>
+            <ul class="bonuses-list">
+              <li class="bonuses-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/bonuses/bonus-01-1x.png 1x,
+                      ./src/img/bonuses/bonus-01-2x.png 2x
+                    "
+                    width="198"
+                    height="198" />
+                  <img
+                    class="bonus-image"
+                    src="./src/img/bonuses/bonus-01-1x.png"
+                    alt="bonus image"
+                    width="198"
+                    height="198"
+                /></picture>
+              </li>
+              <li class="bonuses-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/bonuses/bonus-02-1x.png 1x,
+                      ./src/img/bonuses/bonus-02-2x.png 2x
+                    "
+                    width="198"
+                    height="198" />
+                  <img
+                    class="bonus-image"
+                    src="./src/img/bonuses/bonus-02-1x.png"
+                    alt="bonus image"
+                    width="198"
+                    height="198"
+                /></picture>
+              </li>
+              <li class="bonuses-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/bonuses/bonus-03-1x.png 1x,
+                      ./src/img/bonuses/bonus-03-2x.png 2x
+                    "
+                    width="198"
+                    height="198" />
+                  <img
+                    class="bonus-image"
+                    src="./src/img/bonuses/bonus-03-1x.png"
+                    alt="bonus image"
+                    width="198"
+                    height="198"
+                /></picture>
+              </li>
+              <li class="bonuses-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/bonuses/bonus-04-1x.png 1x,
+                      ./src/img/bonuses/bonus-04-2x.png 2x
+                    "
+                    width="198"
+                    height="198" />
+                  <img
+                    class="bonus-image"
+                    src="./src/img/bonuses/bonus-04-1x.png"
+                    alt="bonus image"
+                    width="198"
+                    height="198"
+                /></picture>
+              </li>
+            </ul>
+          </div>
+          <div class="timer-container">
+            <p class="timer-text">[ твій час спливає ]</p>
+            <div id="countdown-one" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+                <div class="countdown-label hours-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+                <div class="countdown-label minutes-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+                <div class="countdown-label seconds-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="milliseconds countdown-time"></span>
+                <div class="countdown-label milliseconds-label">мілісекунд</div>
+              </div>
+            </div>
+          </div>
+          <a class="bonus-btn" href="#tariffs">долучитися до курсу</a>
+        </div>
+      </section>
+      <section class="if-buy">
+        <div class="container">
+          <div class="title-container">
+            <div class="decor-left"></div>
+            <h2 class="title">Якщо ти придбаєш</h2>
+            <p class="desc">
+              цей курс вже зараз, я ГАРАНТУЮ - твій 2025 рік тебе приємно здивує
+            </p>
+            <div class="decor-right"></div>
+          </div>
+          <div class="list-wrapper">
+            <h2 class="wrapper-title">Завдяки цьому <span>курсу ти:</span></h2>
+            <ul class="wrapper-list">
+              <li class="list-item">
+                <div class="item-box">
+                  <img
+                    src="./src/img/black-mark.png"
+                    alt="mark"
+                    width="27px"
+                    height="27px"
+                  />
+                  <p class="item-text">
+                    вивчиш і зрозумієш усі базові техніки створення зачіски
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="item-box">
+                  <img
+                    src="./src/img/black-mark.png"
+                    alt="mark"
+                    width="27px"
+                    height="27px"
+                  />
+                  <p class="item-text">
+                    навчишся створювати стійкі зачіски швидко та ефективно
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="item-box">
+                  <img
+                    src="./src/img/black-mark.png"
+                    alt="mark"
+                    width="27px"
+                    height="27px"
+                  />
+                  <p class="item-text">
+                    отримаєш доступ до всеможливих фішок та секретів
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="item-box">
+                  <img
+                    src="./src/img/black-mark.png"
+                    alt="mark"
+                    width="27px"
+                    height="27px"
+                  />
+                  <p class="item-text">створиш власний унікальний стиль</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="item-box">
+                  <img
+                    src="./src/img/black-mark.png"
+                    alt="mark"
+                    width="27px"
+                    height="27px"
+                  />
+                  <p class="item-text">розбереш свої помилки в роботі</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="item-box">
+                  <img
+                    src="./src/img/black-mark.png"
+                    alt="mark"
+                    width="27px"
+                    height="27px"
+                  />
+                  <p class="item-text">
+                    отримаєш підтримку і супровід наставника
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="program" id="tariffs">
+        <div class="container">
+          <h2 class="title">Програма курсу</h2>
+          <h3 class="subtitle">Тарифи:</h3>
+          <ul class="tariff-list">
+            <li class="tariff-item">
+              <p class="item-title">Profi</p>
+              <ul class="program-list">
+                <li class="program-item">
+                  Урок 1. Натхнення. Мотивація. Бренд стиліста. Успіх.
+                  Комплексні поради від наставниці
+                </li>
+                <li class="program-item">
+                  Урок 2. Фундаментальна теорія зачісок
+                </li>
+                <li class="program-item">
+                  Урок 3. Види стайлінгу. Інструменти
+                </li>
+                <li class="program-item">
+                  Урок 4. Класичні обʼємні локони на довгому волоссі
+                </li>
+                <li class="program-item">Урок 5. Низький хвіст Wing</li>
+                <li class="program-item">
+                  Урок 6. Високий хвіст із вкладанням трендової чолки
+                </li>
+                <li class="program-item">
+                  Урок 7. Лаконічний весільний пучок у європейському стилі
+                </li>
+                <li class="program-item">Урок 8. Текстурний високий пучок</li>
+                <li class="program-item">Урок 9. Ракушка в стилі KiM</li>
+              </ul>
+              <ul class="bonus-list">
+                <li class="bonus-item">
+                  Бонус 1. Урок створення трендового мокрого обʼєму сухими
+                  продуктами
+                </li>
+                <li class="bonus-item">
+                  Бонус 2. Урок створення ефектних Псевдодредів на волоссі
+                </li>
+                <li class="bonus-item">
+                  Бонус 3. Урок " Робота з аксесуарами. Види кріплення фати"
+                </li>
+                <li class="bonus-item">
+                  Бонус 4. Урок "Фінансова грамотність майстра"
+                </li>
+                <li class="bonus-item">
+                  Бонус 5. Урок просування в інстаграм від запрошеного спікера
+                </li>
+                <li class="bonus-item">
+                  Бонус 6. Диплом про проходження курсу
+                </li>
+                <li class="bonus-item">
+                  Бонус 7. Безлім зворотній звʼязок у телеграм-чаті від
+                  кураторів курсу та Ірини Мелешко
+                </li>
+                <li class="bonus-item">
+                  Бонус 8. Індивідуальне ведення, підтримка та наставництво від
+                  Ірини Мелешко
+                </li>
+              </ul>
+              <p class="program-access">Доступ 3 місяці</p>
+              <p class="price"><span>300$</span> 99$</p>
+              <button
+                class="buy-btn-tariff open-modal-btn"
+                type="button"
+                id="open-modal-1"
+              >
+                Придбати
+              </button>
+            </li>
+            <li class="tariff-item">
+              <p class="item-title">Super Vip</p>
+              <ul class="program-list">
+                <li class="program-item">
+                  Урок 1. Натхнення. Мотивація. Бренд стиліста. Успіх.
+                  Комплексні поради від наставниці
+                </li>
+                <li class="program-item">
+                  Урок 2. Фундаментальна теорія зачісок
+                </li>
+                <li class="program-item">
+                  Урок 3. Види стайлінгу. Інструменти
+                </li>
+                <li class="program-item">
+                  Урок 4. Класичні обʼємні локони на довгому волоссі
+                </li>
+                <li class="program-item">Урок 5. Низький хвіст Wing</li>
+                <li class="program-item">
+                  Урок 6. Високий хвіст із вкладанням трендової чолки
+                </li>
+                <li class="program-item">
+                  Урок 7. Лаконічний весільний пучок у європейському стилі
+                </li>
+                <li class="program-item">Урок 8. Текстурний високий пучок</li>
+                <li class="program-item">Урок 9. Ракушка в стилі KiM</li>
+              </ul>
+              <ul class="bonus-list">
+                <li class="bonus-item">
+                  Бонус 1. Урок створення трендового мокрого обʼєму сухими
+                  продуктами
+                </li>
+                <li class="bonus-item">
+                  Бонус 2. Урок створення ефектних Псевдодредів на волоссі
+                </li>
+                <li class="bonus-item">
+                  Бонус 3. Урок " Робота з аксесуарами. Види кріплення фати"
+                </li>
+                <li class="bonus-item">
+                  Бонус 4. Урок "Фінансова грамотність майстра"
+                </li>
+                <li class="bonus-item">
+                  Бонус 5. Урок просування в інстаграм від запрошеного спікера
+                </li>
+                <li class="bonus-item">
+                  Бонус 6. Диплом про проходження курсу
+                </li>
+                <li class="bonus-item">
+                  Бонус 7. Безлім зворотній звʼязок у телеграм-чаті від
+                  кураторів курсу та Ірини Мелешко
+                </li>
+                <li class="bonus-item">
+                  Бонус 8. Індивідуальне ведення, підтримка та наставництво від
+                  Ірини Мелешко
+                </li>
+              </ul>
+              <p class="program-access">Доступ 6 місяці</p>
+              <p class="price"><span>500$</span> 199$</p>
+              <button
+                class="buy-btn-tariff open-modal-btn"
+                type="button"
+                id="open-modal-2"
+              >
+                Придбати
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="best-time">
+        <h2 class="title">Найкращий час</h2>
+        <p class="subtitle">для твого розвитку був вчора!</p>
+        <div class="marquee-container red-marq">
+          <p class="marquee-text">пізніше завжди дорожче</p>
+        </div>
+        <div class="marquee-container white-marq">
+          <p class="marquee-text">пізніше завжди дорожче</p>
+        </div>
+      </section>
+      <section class="about-author">
+        <div class="container">
+          <h2 class="title">Автор курсу:</h2>
+          <div class="image-container">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/author/author-1x.png 1x,
+                  ./src/img/author/author-2x.png 2x
+                "
+                width="100%"
+                height="auto" />
+              <img
+                class="author-image"
+                src="./src/img/author/author-1x.png"
+                alt="bonus image"
+                width="100%"
+                height="auto"
+            /></picture>
+            <div class="smooth-image"></div>
+          </div>
+          <h3 class="author-name">Ірина Мелешко</h3>
+          <ul class="list">
+            <li class="list-item">
+              Засновниця академії перукарського мистецтва «Hair Academy IM²»
+            </li>
+            <li class="list-item">Член команди Ksenita Team Champions</li>
+            <li class="list-item">
+              Срібний призер міжнародного чемпіонату «Royal Beauty»
+            </li>
+            <li class="list-item">Десятикратна Чемпіонка України 2020-2022р</li>
+            <li class="list-item">Багаторазова Чемпіонка Литви 2023</li>
+            <li class="list-item">Призер Чемпіонату Світу OMC 2020</li>
+            <li class="list-item">Титул «Кращий майстер від країни» 2020</li>
+            <li class="list-item">Член суддівської колегії Champion Fest</li>
+          </ul>
+          <div class="students-count-wrapper">
+            <div class="decor-left"></div>
+            <p class="text">
+              150+ учнів успішно пройшли мої курси та стали топами у своїй сфері
+            </p>
+            <div class="decor-right"></div>
+          </div>
+        </div>
+      </section>
+      <section class="buy-section">
+        <div class="container">
+          <h2 class="title">Бажаєш купити <span>уроки окремо?</span></h2>
+          <p class="desc">[ доступ 2 місяці ]</p>
+          <ul class="list">
+            <li class="list-item">
+              <div class="item-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/buy-sect/buy-01-1x.png 1x,
+                      ./src/img/buy-sect/buy-01-2x.png 2x
+                    "
+                    width="128"
+                    height="145" />
+                  <img
+                    class="item-image"
+                    src="./src/img/buy-sect/buy-01-1x.png"
+                    alt="item image"
+                    width="128"
+                    height="145"
+                /></picture>
+                <div class="text-container">
+                  <p class="item-text">
+                    Класичні обʼємні локони на довгому волоссі
+                  </p>
+                  <div class="buy-container">
+                    <p class="item-price">30$</p>
+                    <button class="buy-btn open-modal-btn" id="open-modal-3">
+                      Придбати
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/buy-sect/buy-02-1x.png 1x,
+                      ./src/img/buy-sect/buy-02-2x.png 2x
+                    "
+                    width="128"
+                    height="145" />
+                  <img
+                    class="item-image"
+                    src="./src/img/buy-sect/buy-02-1x.png"
+                    alt="item image"
+                    width="128"
+                    height="145"
+                /></picture>
+                <div class="text-container">
+                  <p class="item-text">Низький хвіст Wing</p>
+                  <div class="buy-container">
+                    <p class="item-price">30$</p>
+                    <button class="buy-btn open-modal-btn" id="open-modal-4">
+                      Придбати
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/buy-sect/buy-03-1x.png 1x,
+                      ./src/img/buy-sect/buy-03-2x.png 2x
+                    "
+                    width="128"
+                    height="145" />
+                  <img
+                    class="item-image"
+                    src="./src/img/buy-sect/buy-03-1x.png"
+                    alt="item image"
+                    width="128"
+                    height="145"
+                /></picture>
+                <div class="text-container">
+                  <p class="item-text">
+                    Високий хвіст із вкладанням трендової чолки
+                  </p>
+                  <div class="buy-container">
+                    <p class="item-price">30$</p>
+                    <button class="buy-btn open-modal-btn" id="open-modal-5">
+                      Придбати
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/buy-sect/buy-04-1x.png 1x,
+                      ./src/img/buy-sect/buy-04-2x.png 2x
+                    "
+                    width="128"
+                    height="145" />
+                  <img
+                    class="item-image"
+                    src="./src/img/buy-sect/buy-04-1x.png"
+                    alt="item image"
+                    width="128"
+                    height="145"
+                /></picture>
+                <div class="text-container">
+                  <p class="item-text">
+                    Лаконічний весільний пучок у європейському стилі
+                  </p>
+                  <div class="buy-container">
+                    <p class="item-price">30$</p>
+                    <button class="buy-btn open-modal-btn" id="open-modal-6">
+                      Придбати
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/buy-sect/buy-05-1x.png 1x,
+                      ./src/img/buy-sect/buy-05-2x.png 2x
+                    "
+                    width="128"
+                    height="145" />
+                  <img
+                    class="item-image"
+                    src="./src/img/buy-sect/buy-05-1x.png"
+                    alt="item image"
+                    width="128"
+                    height="145"
+                /></picture>
+                <div class="text-container">
+                  <p class="item-text">Текстурний високий пучок</p>
+                  <div class="buy-container">
+                    <p class="item-price">30$</p>
+                    <button class="buy-btn open-modal-btn" id="open-modal-7">
+                      Придбати
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/buy-sect/buy-06-1x.png 1x,
+                      ./src/img/buy-sect/buy-06-2x.png 2x
+                    "
+                    width="128"
+                    height="145" />
+                  <img
+                    class="item-image"
+                    src="./src/img/buy-sect/buy-06-1x.png"
+                    alt="item image"
+                    width="128"
+                    height="145"
+                /></picture>
+                <div class="text-container">
+                  <p class="item-text">Ракушка в стилі KiM</p>
+                  <div class="buy-container">
+                    <p class="item-price">30$</p>
+                    <button class="buy-btn open-modal-btn" id="open-modal-8">
+                      Придбати
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="only-bonuses">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Купити лише бонуси:</h2>
+            <div class="move-container">
+              <img src="./src/img/move-hand.svg" alt="move hand" width="21" />
+              <p class="move-text">гортай, щоб побачити більше</p>
+            </div>
+          </div>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-01-1x.png 1x,
+                      ./src/img/reviews/review-01-2x.png 2x
+                    "
+                    width="128"
+                    height="208" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-01-1x.png"
+                    alt="review"
+                    width="128"
+                    height="208"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-02-1x.png 1x,
+                      ./src/img/reviews/review-02-2x.png 2x
+                    "
+                    width="128"
+                    height="208" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-02-1x.png"
+                    alt="review"
+                    width="128"
+                    height="208"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-03-1x.png 1x,
+                      ./src/img/reviews/review-03-2x.png 2x
+                    "
+                    width="128"
+                    height="208" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-03-1x.png"
+                    alt="review"
+                    width="128"
+                    height="208"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-04-1x.png 1x,
+                      ./src/img/reviews/review-04-2x.png 2x
+                    "
+                    width="128"
+                    height="208" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-04-1x.png"
+                    alt="review"
+                    width="128"
+                    height="208"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-05-1x.png 1x,
+                      ./src/img/reviews/review-05-2x.png 2x
+                    "
+                    width="128"
+                    height="208" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-05-1x.png"
+                    alt="review"
+                    width="128"
+                    height="208"
+                /></picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <p class="bonus-price">100$</p>
+          <button
+            class="buy-all-bns open-modal-btn"
+            id="open-modal-9"
+            type="button"
+          >
+            Придбати всі бонуси
+          </button>
+          <p class="all-bns-access">[ доступ 2 місяці ]</p>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">відгуки</h2>
+            <div class="move-container">
+              <img src="./src/img/move-hand.svg" alt="move hand" width="21" />
+              <p class="move-text">гортай, щоб побачити більше</p>
+            </div>
+          </div>
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-01-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-01-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-01-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-02-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-02-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-02-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-03-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-03-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-03-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-04-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-04-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-04-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-05-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-05-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-05-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-06-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-06-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-06-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-07-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-07-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-07-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-08-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-08-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-08-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-09-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-09-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-09-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-10-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-10-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-10-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-11-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-11-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-11-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/rel-reviews/review-img-12-1x.png 1x,
+                      ./src/img/rel-reviews/review-img-12-2x.png 2x
+                    "
+                    width="310"
+                    height="300" />
+                  <img
+                    class="review-image"
+                    src="./src/img/rel-reviews/review-img-12-1x.png"
+                    alt="review"
+                    width="310"
+                    height="300"
+                /></picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer section">
+      <div class="container">
+        <div class="fop-box">
+          <p class="name">ФОП Марків Ірина</p>
+          <!-- <p class="code">іпн 00000000</p> -->
+        </div>
+        <a class="mail-link" href="mailto:hair.academy.im2@gmail.com"
+          ><div class="mail-box">
+            <img src="./src/img/mail.svg" alt="mail" />
+            <p class="mail">пошта</p>
+          </div></a
+        >
+        <div class="deals-box">
+          <a
+            href="https://docs.google.com/document/d/1R42bgD2_hzRRI1D9OMcYd8N_Kxlx0_BQ20AGHz5JRD8/edit?usp=sharing"
+            target="_blank"
+            rel="nofollow"
+            class="deals-link public"
+            >публічна оферта</a
+          >
+          <a
+            href="https://docs.google.com/document/d/1KyQGmZDWC4ZMi5g0g4g4FLJxTcCnU8KFfP2E5K1nfGw/edit?usp=sharing"
+            target="_blank"
+            rel="nofollow"
+            class="deals-link confidence"
+            >політика конфідеційності</a
+          >
+        </div>
+        <a
+          class="dising-creator"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/insta.svg" alt="insta" height="25" width="25" />
+          <p>
+            розробка сайту <br />
+            <span>lisa bardadym</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <div id="modal-1" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">PROFI "PREMIUM HAIRSTYLIST"</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733779417000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-2" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">SUPER VIP "PREMIUM HAIRSTYLIST"</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733754394000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-3" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">Класичні об'ємні локони на довгому волоссі</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733779806000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-4" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">Низький хвіст "Wing"</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733779793000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-5" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">Високий хвіст із трендовим вкладанням чолки</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733780828000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-6" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">Лаконічний весільний пучок у європейському</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733779912000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-7" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">Стильний високий пучок у текстурному виконан</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733780111000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-8" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">Ракушка в стилі KiM</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733780189000"></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-9" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-content">
+          <p class="modal-name">Купити всі бонуси</p>
+          <button type="button" class="close-modal">
+            <img
+              src="./src/img/close-modal-icon.svg"
+              width="40"
+              height="40"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1733754442000"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/modal.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.bundle.js"></script>
+    <script src="./src/js/marquee.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733779417000&uuid=939991c7-15f3-415c-905f-8646b618fbc4&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733754394000&uuid=981b9ebb-ab80-4c25-a6d4-a73fdd251905&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733779806000&uuid=12d0d749-7919-4a57-99a9-6a0e06fe59b3&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733779793000&uuid=53c5afbf-589c-4a9a-8988-b1aaca79c763&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733780828000&uuid=07d17f33-05b4-4787-87a6-f3b5edf027a0&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733779912000&uuid=0af33ef0-3294-42d4-bcd7-f7aa6930c496&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733780111000&uuid=21065263-2a08-4111-bf1f-8fd96b2aa54d&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733780189000&uuid=a8311be3-4810-4d2d-badb-74b9189c8336&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1733754442000&uuid=8c8102aa-b9f8-4be2-a9ea-7617c27e8449&producer=https://kwiga.com/"
+    ></script>
   </body>
 </html>
