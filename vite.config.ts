@@ -14,10 +14,10 @@ export default () => {
         mozjpeg: {
           quality: 80,
         },
-        pngquant: {
-          quality: [0.8, 0.9],
-          speed: 4,
-        },
+        // pngquant: {
+        //   quality: [0.8, 0.9],
+        //   speed: 4,
+        // },
         svgo: {
           plugins: [
             {
