@@ -136,6 +136,12 @@ body {
 .bonuses {
   padding-bottom: 60px;
   background: #060606;
+
+  background-image: url(../img/bonuses/ellipse-01.png),
+    url(../img/bonuses/ellipse-02.png);
+  background-repeat: no-repeat;
+  background-position: left 0 top 0, right 0 bottom 0;
+  background-size: 460px, 300px;
 }
 
 .bonuses .container {
@@ -425,6 +431,77 @@ body {
   max-width: 245px;
 }
 
+/* for-you */
+
+.for-you {
+  background: #060606;
+
+  background-image: url(../img/for-you/ellipse-01.svg),
+    url(../img/for-you/ellipse-02.svg);
+  background-repeat: no-repeat;
+  background-position: left 0 top -100px, right 0 bottom -120px;
+  background-size: 360px, 300px;
+}
+
+.for-you .container {
+}
+
+.for-you .title {
+  color: #fff;
+  font-family: Oranienbaum;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+}
+
+.for-you .title span {
+  color: #f92c2c;
+}
+
+.for-you .list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.for-you .list-item {
+  padding-left: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+
+  height: 100px;
+}
+
+.for-you .item-number {
+  color: rgba(255, 255, 255, 0.1);
+  font-family: Oranienbaum;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 64px */
+  text-transform: uppercase;
+}
+
+.for-you .item-text {
+  color: #fff;
+  font-family: 'Corsa Grotesk';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 16.5px */
+
+  max-width: 214px;
+}
+
 /* program */
 
 .program {
@@ -674,6 +751,12 @@ body {
 .about-author {
   padding-top: 60px;
   background: #060606;
+
+  background-image: url(../img/bonuses/ellipse-01.png),
+    url(../img/bonuses/ellipse-02.png);
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -100px, right 0 bottom 100px;
+  background-size: 360px, 300px;
 }
 
 .about-author .container {
@@ -793,6 +876,13 @@ body {
 .buy-section {
   padding: 60px 0;
   background: #060606;
+
+  background-image: url(../img/bonuses/ellipse-01.png),
+    url(../img/bonuses/ellipse-02.png), url(../img/bonuses/ellipse-02.png);
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 50%, right 0 top -100px,
+    right 0 bottom -120px;
+  background-size: 360px, 300px, 300px;
 }
 
 .buy-section .container {
@@ -1022,6 +1112,12 @@ body {
 .reviews {
   padding: 60px 0;
   background: #060606;
+
+  background-image: url(../img/bonuses/ellipse-01.png);
+
+  background-repeat: no-repeat;
+  background-position: left 0 top -100px;
+  background-size: 360px;
 }
 
 .reviews .container {
