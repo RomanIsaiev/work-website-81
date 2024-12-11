@@ -333,6 +333,25 @@ body {
   animation: pulseScale 2000ms infinite;
 }
 
+/* js show btn */
+
+.header-button-container.scroll-container {
+  display: none;
+}
+
+/* */
+.header-button-container.scroll-container.js-show {
+  display: block;
+
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  z-index: 999;
+
+  width: 100%;
+  transform: translate(-50%);
+}
+
 /* if-buy */
 
 .if-buy {
@@ -1208,6 +1227,7 @@ body {
 /* footer */
 
 .footer {
+  padding-bottom: 120px;
   background: #090909;
   max-width: 430px;
   margin: 0 auto;
